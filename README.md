@@ -23,6 +23,7 @@
 **To make sure the installed packages of your system match the list and remove all the packages that are not mentioned in it:**
 `doas pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pkglist.txt))`
 
+**Wallpapers** : [catppuccin/wallpapers](https://github.com/catppuccin/wallpapers)
 
  
 ..
