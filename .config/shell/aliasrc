@@ -1,0 +1,39 @@
+## Aliases ##
+
+###################################################################################################################
+## "-a : do not ignore entries with . " , "-h : human readable , "-l : Display extended file metadata as a table" ##
+alias lla='lsd -alh' 
+alias ls='lsd -h'
+alias la='lsd -A'
+alias ll='lsd -l'
+####################################################################################################################
+alias cat='bat' ## Uses bat instead of cat (Has Syntax highlighting , Git integration , Automatic paging https://github.com/sharkdp/bat ##
+alias ssn='sudo shutdown now'
+alias grep='grep --color=auto' ## Give color to grep output ##
+##################################################################################################################################################################################################################################
+## "-i : Prompt before overwrite" , "-v : explain what is being done" , "-I : prompt once before removing more than three files, or when removing recursively" , "-p : no error if existing, make parent directories as needed" ##
+alias cp="cp -iv"
+alias mv='mv -iv'
+alias rm='rm -vI'
+alias mkdir='mkdir -pv'
+##################################################################################################################################################################################################################################
+alias zshrc='nvim ~/.config/zsh/.zshrc'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com' ## Get your public IP ##
+alias df='df -h' ## Human readable format ##
+alias jctl="journalctl -p 3 -xb" ## Get error messages from journalctl ##
+alias pastebin="curl -F 'f:1=<-' ix.io" ## Upload the terminal output to ix.io ( Example : "\cat .zshrc | pastebin" Uploads the contents to ix.io) ## 
+#####################################################################################################################################################
+## git ##                
+alias addup='git add -u'      #
+alias addall='git add .'      #
+alias commit='git commit -m'  #
+alias push='git push'         #
+alias stat='git status'       #
+###############################
+
+## doas not required for some system commands ##
+for command in mount umount updatedb su shutdown poweroff reboot ; do
+	alias $command="doas $command"
+done; unset command
+#####################################################################
+
