@@ -1,11 +1,14 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-rxfetch
 #colorscript random
 
 set -e fish_user_paths
-set -U fish_user_paths $HOME/.local/bin $HOME/AppImages $fish_user_paths
+set -U fish_user_paths $HOME/.local/bin $fish_user_paths
+
+# Add ~/AppImages to PATH
+if test -d ~/AppImages 
+   if not contains -- ~/AppImages $PATH
+      set -p PATH ~/AppImages
+   end
+end   
 
 #Supresses fish's intro message
 set fish_greeting
@@ -17,6 +20,11 @@ set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 #Default Applications
 set EDITOR nvim
 
+# Function Backup
+function backup --argument filename
+    cp $filename $filename.bak
+end
+
 #Alias
 alias lla='lsd -alh' 
 alias ls='lsd -h'
@@ -24,14 +32,18 @@ alias la='lsd -A'
 alias ll='lsd -l'
 alias cp="cp -iv"
 alias mv='mv -iv'
+alias l.="lsd -a | grep '^\.'"
+alias ip='ip -color'
 alias rm='rm -vI'
 alias mkdir='mkdir -pv'
 alias cat='bat'
 alias ssn='sudo shutdown now'
 alias grep='grep --color=auto'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias cleanup='doas pacman -Rcns (pacman -Qtdq)'
 alias df='df -h' 
 alias jctl="journalctl -p 3 -xb" 
+alias rmdb='doas rm /var/lib/pacman/db.lck'
 alias pastebin="curl -F 'f:1=<-' ix.io"
 alias addup='git add -u'      
 alias addall='git add .'      
@@ -39,4 +51,6 @@ alias commit='git commit -m'
 alias push='git push'         
 alias stat='git status'       
 
-starship init fish | source
+if status --is-interactive
+   source ("/usr/local/bin/starship" init fish --print-full-init | psub)
+end   
