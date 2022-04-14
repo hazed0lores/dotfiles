@@ -28,11 +28,11 @@ sudo cp etc/pacman.d/hooks/* /etc/pacman.d/hooks/
 sed -i "s/admin/$USER/" /etc/pacman.d/hooks/pkglist.hook
 sed -i "s/admin/$USER/" /etc/pacman.d/hooks/aur.hook
 #### Asks the user if they want to install programs in pkglist.txt ####
-while true; do
-    read -p "Install programs from pkglist.txt ?" yn
-    case $yn in
-        [Yy]* ) doas pacman -S --needed $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt)) ; break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+
+echo "Install Programs from pkglist.txt ?"
+read pkglist
+[ $pkglist = "y" ] && sudo pacman -S --needed $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt))
+
+echo "Install programs from aur.txt ? "
+read aur 
+[ $aur = "y" ] && paru -S --needed - < aur.txt

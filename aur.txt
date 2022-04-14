@@ -1,7 +1,6 @@
 lf-bin
 librewolf-bin
 paru
-pyxtrlock
 qbittorrent-qt5
 qview
 spotify

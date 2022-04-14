@@ -36,6 +36,7 @@ grub
 htop
 intel-media-driver
 intel-ucode
+jre11-openjdk
 kactivitymanagerd
 kde-cli-tools
 kde-gtk-config
@@ -84,6 +85,7 @@ networkmanager
 networkmanager-openvpn
 ninja
 nmap
+nodejs
 noto-fonts-emoji
 ntfs-3g
 obsidian
@@ -110,7 +112,6 @@ plasma-workspace-wallpapers
 polkit-kde-agent
 powerdevil
 python-pip
-pyxtrlock
 qbittorrent-qt5
 qview
 reflector
