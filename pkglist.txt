@@ -1,5 +1,4 @@
 android-tools
-archiso
 aria2
 ark
 autoconf
@@ -33,7 +32,9 @@ gcc
 git
 gnome-keyring
 grub
+hdparm
 htop
+inkscape
 intel-media-driver
 intel-ucode
 jre11-openjdk
@@ -43,6 +44,7 @@ kde-gtk-config
 kdeconnect
 kdecoration
 kdeplasma-addons
+keepassxc
 kgamma5
 khotkeys
 kinfocenter
@@ -55,7 +57,6 @@ ksshaskpass
 ksystemstats
 kwallet-pam
 kwayland-integration
-kwayland-server
 kwin
 kwrited
 layer-shell-qt
@@ -80,6 +81,7 @@ mousepad
 mtools
 mupdf
 nano
+neofetch
 neovim
 networkmanager
 networkmanager-openvpn
@@ -87,6 +89,7 @@ ninja
 nmap
 nodejs
 noto-fonts-emoji
+npm
 ntfs-3g
 obsidian
 opendoas
@@ -96,6 +99,7 @@ partitionmanager
 paru
 patch
 pavucontrol
+pfetch
 pipewire-alsa
 pipewire-pulse
 pkgconf
@@ -115,13 +119,13 @@ python-pip
 qbittorrent-qt5
 qview
 reflector
+rkhunter
 rsync
 sddm
 sddm-kcm
 signal-desktop
 sof-firmware
 spectacle
-spotify
 sshfs
 startup-notification
 syncthing

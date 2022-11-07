@@ -1,3 +1,6 @@
+
+![Alt](assets/preview.png)
+
 **OS** : Arch Linux
 
 **Shell** : zsh
