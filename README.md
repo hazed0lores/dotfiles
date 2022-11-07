@@ -1,7 +1,7 @@
 
 ![Alt](assets/preview.png)
 
-**OS** : Arch Linux
+**OS** : Arch Linux , OpenSUSE
 
 **Shell** : zsh
 
@@ -17,6 +17,8 @@
 
 **Terminal** : kitty
 
+**Fetch** : [fetch](https://github.com/Manas140/fetch)
+
 **Install packages from list:**
 `doas pacman -S --needed $(comm -12 <(pacman -Slq | sort) <(sort pkglist.txt))`
 
@@ -27,6 +29,6 @@
 `doas pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pkglist.txt))`
 
 **Wallpapers** : [catppuccin/wallpapers](https://github.com/catppuccin/wallpapers)
-
+                 [thef0xx/wallpapers](https://gitlab.com/thef0xx/wallpapers)
  
 ..
