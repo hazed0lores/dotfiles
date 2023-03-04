@@ -1,7 +1,7 @@
 
 ![Alt](assets/preview.png)
 
-**OS** : Arch Linux , OpenSUSE
+**OS** : Arch Linux
 
 **Shell** : zsh
 
@@ -16,6 +16,8 @@
 **Icons** : Beautyline
 
 **Terminal** : kitty
+
+**Editor** : nvim
 
 **Fetch** : [fetch](https://github.com/Manas140/fetch)
 
