@@ -1,6 +1,6 @@
 # Adds ~/.local/bin and ~/AppImages to $PATH
 export PATH=~/.local/bin:$PATH
-export PATH=~/AppImages:$PATH
+export PATH=~/Applications:$PATH
 
 # Use 'bat as MANPAGER"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"

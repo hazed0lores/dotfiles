@@ -13,7 +13,7 @@ setopt auto_cd
 
 export LANG=en_US.UTF-8
 
-rxfetch
+fetch
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 

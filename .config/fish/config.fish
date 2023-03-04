@@ -4,9 +4,9 @@ set -e fish_user_paths
 set -U fish_user_paths $HOME/.local/bin $fish_user_paths
 
 # Add ~/AppImages to PATH
-if test -d ~/AppImages 
-   if not contains -- ~/AppImages $PATH
-      set -p PATH ~/AppImages
+if test -d ~/Applications
+   if not contains -- ~/Applications $PATH
+      set -p PATH ~/Applications
    end
 end   
 
