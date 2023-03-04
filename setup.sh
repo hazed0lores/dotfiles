@@ -7,7 +7,7 @@ PKG_LIST="pkglist.txt"
 AUR_LIST="aur.txt"
 
 # Source the functions from the original script
-source /path/to/original/script.sh
+source functions.sh
 
 # Call the functions as needed
 install_required_programs
