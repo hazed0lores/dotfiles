@@ -17,7 +17,7 @@
 
 **Terminal** : kitty
 
-**Editor** : nvim
+**Editor** : nvim(NvChad)
 
 **Fetch** : [fetch](https://github.com/Manas140/fetch)
 
