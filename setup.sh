@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Define constants
-CONFIG_DIR="$HOME/.config"
-ZSH_PLUGINS_DIR="$CONFIG_DIR/zsh"
-PKG_LIST="pkglist.txt"
-AUR_LIST="aur.txt"
-
 # Source the functions from the original script
 source functions.sh
 

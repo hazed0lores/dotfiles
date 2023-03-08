@@ -1,7 +1,6 @@
+brave-bin
 lf-bin
 librewolf-bin
 paru
-qbittorrent-qt5
 qview
 vscodium-bin
-brave-bin

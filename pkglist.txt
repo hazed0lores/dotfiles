@@ -23,6 +23,7 @@ drkonqi
 efibootmgr
 expac
 fakeroot
+fdupes
 fish
 flex
 fuse2
@@ -31,6 +32,7 @@ gcc
 git
 gnome-keyring
 gpa
+gparted
 grub
 hdparm
 intel-media-driver
@@ -107,7 +109,7 @@ plasma-workspace-wallpapers
 polkit-kde-agent
 powerdevil
 python-pip
-qbittorrent-qt5
+qbittorrent
 qview
 reflector
 rustup

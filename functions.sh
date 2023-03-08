@@ -41,7 +41,7 @@ merge_xresources() {
 
 install_btop_theme() {
     sudo mkdir -p /usr/share/btop/themes
-    sudo mv catppuccin.theme /usr/share/btop/themes
+    wget https://raw.githubusercontent.com/catppuccin/btop/main/catppuccin_mocha.theme && sudo mv catppuccin.theme /usr/share/btop/themes
 }
 
 copy_pacman_hooks() {

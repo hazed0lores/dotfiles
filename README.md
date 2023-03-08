@@ -1,23 +1,31 @@
 
-![Alt](assets/preview.png)
+![Preview](assets/plasma.png)  
 
-**OS** : Arch Linux
+![kitty](assets/kitty.png)
 
-**Shell** : zsh
+![code](assets/code.png)
 
-**DE** : Plasma
+![nvim](assets/nvim.png)
 
-**WM** : KWin
+![btop](assets/btop.png)
 
-**WM Theme** : Fancy-Aurorae
+**OS** : [Arch Linux](archlinux.org)
 
-**Theme** : Fancy-Dark
+**Shell** : [zsh](https://zsh.sourceforge.io/)
 
-**Icons** : Beautyline
+**DE** : [Plasma](https://kde.org/plasma-desktop/)
 
-**Terminal** : kitty
+**WM** : [KWin](https://userbase.kde.org/KWin)
 
-**Editor** : nvim(NvChad)
+**WM Theme** : [Fancy-Aurorae](https://store.kde.org/p/1598649)
+
+**Theme** : [Fancy-Dark](https://store.kde.org/p/1598649)
+
+**Icons** : [Beautyline](https://store.kde.org/p/1425426/)
+
+**Terminal** : [kitty](https://github.com/kovidgoyal/kitty)
+
+**Editor** : [nvim](https://github.com/neovim/neovim)
 
 **Fetch** : [fetch](https://github.com/Manas140/fetch)
 
