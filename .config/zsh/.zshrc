@@ -81,8 +81,8 @@ zle -N down-line-or-beginning-search
 
 
 HISTFILE=~/.config/zsh/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+HISTSIZE=100000
+SAVEHIST=100000
 
 # Using lf to switch directories and bind it to Ctrl+o
 lfcd () {
@@ -105,6 +105,8 @@ bindkey '^[[P' delete-char
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/fzf-keybindings.zsh
+source ~/.config/zsh/fzf-dir-navigator/fzf-dir-navigator.zsh
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down

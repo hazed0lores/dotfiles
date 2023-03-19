@@ -67,6 +67,7 @@ libva-utils
 libvdpau-va-gl
 linux
 linux-firmware
+lostfiles
 lsd
 m4
 mailcap
@@ -77,7 +78,6 @@ milou
 mousepad
 mtools
 mupdf
-nano
 neovim
 networkmanager
 networkmanager-openvpn
@@ -86,7 +86,6 @@ nodejs
 noto-fonts-emoji
 npm
 ntfs-3g
-obsidian
 opendoas
 openssh
 openssl-1.1
@@ -112,6 +111,7 @@ python-pip
 qbittorrent
 qview
 reflector
+ripgrep-all
 rustup
 sddm
 sddm-kcm
@@ -123,17 +123,17 @@ startup-notification
 systemsettings
 thermald
 tlp
+tree
 ufw
 unrar
 unzip
 usbutils
 vdpauinfo
+virtualbox
 vscodium-bin
 wget
 wireplumber
 wpa_supplicant
 xdg-desktop-portal-kde
-xdotool
 xorg-xhost
-xprintidle
 zsh

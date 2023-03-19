@@ -8,7 +8,7 @@ AUR_LIST="aur.txt"
 
 # Define functions
 install_required_programs() {
-    sudo pacman -S zsh kitty xorg-xrdb bat btop lsd --needed --noconfirm
+    sudo pacman -S zsh kitty xorg-xrdb bat btop lsd tree --needed --noconfirm
 }
 
 copy_configuration_files() {
@@ -20,6 +20,8 @@ install_zsh_plugins() {
     git clone https://github.com/zsh-users/zsh-syntax-highlighting "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting"
     git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_PLUGINS_DIR/zsh-autosuggestions"
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$ZSH_PLUGINS_DIR/powerlevel10k"
+    git clone https://github.com/KulkarniKaustubh/fzf-dir-navigator "$ZSH_PLUGINS_DIR/fzf-dir-navigator"
+    curl https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.zsh --output ~/.config/zsh/fzf-keybindings.zsh
 }
 
 install_bash_insulter() {
