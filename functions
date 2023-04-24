@@ -49,8 +49,8 @@ install_btop_theme() {
 copy_pacman_hooks() {
     sudo mkdir -p /etc/pacman.d/hooks
     sudo cp etc/pacman.d/hooks/* /etc/pacman.d/hooks
-    sed -i "s/admin/$USER/" /etc/pacman.d/hooks/pkglist.hook
-    sed -i "s/admin/$USER/" /etc/pacman.d/hooks/aur.hook
+    sudo sed -i "s/admin/$USER/" /etc/pacman.d/hooks/pkglist.hook
+    sudo sed -i "s/admin/$USER/" /etc/pacman.d/hooks/aur.hook
 }
 
 install_pkglist_programs() {
