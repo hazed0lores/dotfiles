@@ -34,10 +34,12 @@ alias push='git push'
 alias stat='git status'       
 
 alias cat='bat' 
+alias pip3="$HOME/.local/bin/pip3"
+alias pip="$HOME/.local/bin/pip"
 
-# doas not required for some system commands.
-for command in mount umount updatedb su shutdown poweroff reboot ; do
-	alias $command="doas $command"
+# sudo not required for some system commands.
+for command in mount umount updatedb shutdown poweroff reboot ; do
+	alias $command="sudo $command"
 done; unset command
 
 # dot

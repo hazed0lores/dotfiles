@@ -1,6 +1,5 @@
-brave-bin
-lf-bin
 librewolf-bin
 paru
+paru-debug
 qview
 vscodium-bin

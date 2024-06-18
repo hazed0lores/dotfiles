@@ -8,7 +8,7 @@ AUR_LIST="aur.txt"
 
 # Define functions
 install_required_programs() {
-    sudo pacman -S zsh kitty xorg-xrdb bat btop lsd tree --needed --noconfirm
+    sudo pacman -S zsh kitty xorg-xrdb bat btop lsd tree lf --needed --noconfirm
 }
 
 copy_configuration_files() {
@@ -37,13 +37,9 @@ install_starship_prompt() {
     sudo sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 }
 
-merge_xresources() {
-    xrdb merge "$CONFIG_DIR/x11/Xresources"
-}
-
 install_btop_theme() {
     sudo mkdir -p /usr/share/btop/themes
-    wget https://raw.githubusercontent.com/catppuccin/btop/main/catppuccin_mocha.theme && sudo mv catppuccin.theme /usr/share/btop/themes
+    wget https://github.com/catppuccin/btop/blob/main/themes/catppuccin_mocha.theme && sudo mv catppuccin.theme /usr/share/btop/themes/
 }
 
 copy_pacman_hooks() {
