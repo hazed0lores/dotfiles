@@ -17,15 +17,15 @@
 
 **WM** : [KWin](https://userbase.kde.org/KWin)
 
-**WM Theme** : [Fancy-Aurorae](https://store.kde.org/p/1598649)
+**WM Theme** : [Catppuccin Mocha Lavender](https://github.com/catppuccin/kde)
 
-**Theme** : [Fancy-Dark](https://store.kde.org/p/1598649)
+**Theme** : [Catppuccin Mocha Modern](https://github.com/catppuccin/kde)
 
-**Icons** : [Beautyline](https://store.kde.org/p/1425426/)
+**Icons** : Breeze Dark & [Beautyline](https://store.kde.org/p/1425426/)
 
 **Terminal** : [kitty](https://github.com/kovidgoyal/kitty)
 
-**Editor** : [nvim](https://github.com/neovim/neovim)
+**Editor** : [Neovim](https://github.com/neovim/neovim)
 
 **Fetch** : [fetch](https://github.com/Manas140/fetch)
 
@@ -38,7 +38,4 @@
 **To make sure the installed packages of your system match the list and remove all the packages that are not mentioned in it:**
 `doas pacman -Rsu $(comm -23 <(pacman -Qq | sort) <(sort pkglist.txt))`
 
-**Wallpapers** : [catppuccin/wallpapers](https://github.com/catppuccin/wallpapers)
-                 [thef0xx/wallpapers](https://gitlab.com/thef0xx/wallpapers)
- 
-..
+**Wallpapers** :  [hazedolores/wallpapers](https://gitlab.com/hazedolores/wallpapers)
