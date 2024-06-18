@@ -9,7 +9,7 @@
 
 ![btop](assets/btop.png)
 
-**OS** : [Arch Linux](archlinux.org)
+**OS** : [Arch Linux](https://archlinux.org)
 
 **Shell** : [zsh](https://zsh.sourceforge.io/)
 
