@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# Verbosity and others
+alias \
+  cp="cp -iv" \
+  mv="mv -iv" \
+  rm="rm -vI" \
+  df="df -h" \
+  mkdir="mkdir -pv" \
+  cat="bat" 
+
+# Abbreviate commands
+alias \
+  zshrc="nvim ~/.config/zsh/.zshrc" \
+  myip="dig +short myip.opendns.com @resolver1.opendns.com" \
+  jctl="journalctl -p 3 -xb" \
+  pastebin="curl -F 'f:1=<-' ix.io" \
+  ssn="sudo shutdown now" 
+
+# Color
+  grep="grep --color=auto" \
+  diff="diff --color=auto" \
+  ip="ip -colour"
+
+# Git
+alias \
+  addup="git add -u" \
+  addall="git add ." \
+  commit="git commit -m" \
+  push="git push" \
+  stat="git status"
+
+# pip
+alias \
+  pip3="$HOME/.local/bin/pip3" \
+  pip="$HOME/.local/bin/pip"
+
+# sudo not required for some system commands.
+for command in mount umount updatedb shutdown poweroff reboot ; do
+	alias $command="sudo $command"
+done; unset command
+

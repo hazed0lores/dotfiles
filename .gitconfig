@@ -1,0 +1,6 @@
+[user]
+	email = git@hazedolores.org
+	name = Haze
+	signingkey = 6E98EF301AC4CEC97E00CB9FA8FE0065AAB69970
+[commit]
+	gpgsign = true

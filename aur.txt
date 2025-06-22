@@ -1,0 +1,7 @@
+brave-bin
+docker-desktop
+librewolf-bin
+neofetch
+qview
+rustdesk
+vscodium-bin
