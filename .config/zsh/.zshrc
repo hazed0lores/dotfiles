@@ -110,3 +110,6 @@ source ~/.config/zsh/fzf-dir-navigator/fzf-dir-navigator.zsh
 
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+. "$HOME/.atuin/bin/env"
+eval "$(atuin init zsh)"
