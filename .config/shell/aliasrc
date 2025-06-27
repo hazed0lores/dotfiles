@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# ls to lsd
+alias lla="lsd -alh"
+alias ls="lsd -h"
+alias la="lsd -A"
+alias ll="lsd -l"
+alias l.="lsd -a | grep '^\.'"
 # Verbosity and others
 alias \
   cp="cp -iv" \
