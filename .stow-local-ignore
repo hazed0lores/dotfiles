@@ -21,7 +21,7 @@ _darcs
 ^/LICENSE.*
 ^/COPYING
 
-setup.sh
+final.sh
 etc
 aur.txt
 pkglist.txt
