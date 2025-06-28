@@ -70,6 +70,7 @@ tooltip {
   margin-top: 5px;
   margin-bottom: 5px;
   border: 1px solid #181825;
+  border-radius: 15px;
 }
 
 #temperature {
@@ -100,11 +101,6 @@ tooltip {
   padding-left: 5px;
 }
 
-#custom-power_profile {
-  color: #a6e3a1;
-  border-left: 0px;
-  border-right: 0px;
-}
 
 #window {
   border-radius: 15px;
@@ -122,7 +118,7 @@ tooltip {
 
 #network {
   color: #f9e2af;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 15px; 
   border-left: 0px;
   border-right: 0px;
   padding-right: 17px;
@@ -140,7 +136,8 @@ tooltip {
   border-left: 0px;
   border-right: 0px;
   padding-left: 17px;
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 15px;
+  margin-right: 10px;
 }
 
 #pulseaudio.microphone {
