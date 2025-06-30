@@ -1,3 +1,4 @@
+7zip
 accountsservice
 alsa-firmware
 alsa-plugins
@@ -13,7 +14,9 @@ bash-completion
 bat
 bind
 bitwarden
+blueberry
 bluedevil
+blueman
 bluez
 bluez-utils
 brave-bin
@@ -22,6 +25,7 @@ breeze-plymouth
 btop
 btrfs-progs
 cantarell-fonts
+chafa
 chntpw
 cliphist
 cryptsetup
@@ -68,6 +72,7 @@ gst-plugins-bad
 gst-plugins-ugly
 haveged
 hdparm
+helvum
 hugo
 hwdetect
 hwinfo
@@ -85,6 +90,7 @@ iperf3
 iptables-nft
 iwd
 jfsutils
+jq
 kcalc
 kde-cli-tools
 kde-gtk-config
@@ -270,4 +276,6 @@ xl2tpd
 xsettingsd
 xterm
 yay
+yazi
+zoxide
 zsh
