@@ -16,7 +16,7 @@ export LANG=en_US.UTF-8
 fetch
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
-
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/profile"
 ## Randomly insults the user when typing wrong command. (https://gitlab.com/dwt1/bash-insulter) ##
 if [ -f /etc/bash.command-not-found ]; then
     . /etc/bash.command-not-found
