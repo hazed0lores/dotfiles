@@ -111,11 +111,6 @@ install_aur_programs() {
 	paru -S --needed - < "$AUR_LIST"
 }
 
-install_kde_theme() {
-	git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde
-	./install.sh
-}
-
 setup_virtualization() {
 	sudo pacman -S qemu-full swtpm libvirt dnsmasq virt-manager --needed --noconfirm
 	sudo systemctl enable --now libvirtd.service 
@@ -170,9 +165,8 @@ show_menu() {
         8 "Copy pacman hooks" on
         9 "Install programs from pkglist.txt" on
         10 "Install programs from aur.txt" on
-	11 "Install catppuccin theme for Plasma" off
-        12 "Setup Virtualization" off
-        13 "Setup Tailscale" off
+        11 "Setup Virtualization" off
+        12 "Setup Tailscale" off
 )
     choices=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
     exit_status=$?
@@ -218,13 +212,10 @@ show_menu() {
                 install_aur_programs
                 ;;
 
-	        11) install_kde_theme
-                ;;
-
-	        12) setup_virtualization
+	    11) setup_virtualization
                 ;;
                 
-            13) setup_tailscale
+            12) setup_tailscale
                 ;;
         esac
     done
