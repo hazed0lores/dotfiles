@@ -18,6 +18,14 @@ window#waybar.empty #window {
   border: 0px;
   background-color: transparent;
 }
+
+tooltip {
+  background: #1e1e2e;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #11111b;
+}
 #workspaces button {
   padding: 5px;
   color: #b4befe;
