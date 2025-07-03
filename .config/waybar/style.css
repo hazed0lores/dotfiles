@@ -12,15 +12,12 @@ window#waybar {
   background: #1e1e2e;
   color: #cdd6f4;
 }
-
-tooltip {
-  background: #1e1e2e;
-  border-radius: 10px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #11111b;
+window#waybar.empty #window {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  background-color: transparent;
 }
-
 #workspaces button {
   padding: 5px;
   color: #b4befe;
