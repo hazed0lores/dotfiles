@@ -6,7 +6,7 @@
 	"passthrough": false,
 	"gtk-layer-shell": true,
 	"height": 44,
-	"modules-left": ["custom/launch_wofi", "hyprland/workspaces"],
+	"modules-left": ["hyprland/workspaces"],
 	"modules-center" : ["hyprland/window"],
 	"modules-right": [
 		"wireplumber",
@@ -124,9 +124,9 @@
 		"tooltip-format-enumerate-connected": "{device_alias}"
 	},
 
-	"custom/launch_wofi": {
+	"custom/launch_rofi": {
 		"format": " ",
-		"on-click": "pkill wofi; wofi",
+		"on-click": "~/.config/rofi/launchers/type-6/launcher.sh",
 		"tooltip": false
 	}
 }
