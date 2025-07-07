@@ -1042,6 +1042,15 @@ require("lazy").setup({
 		},
 	},
 })
-
+-- Search a directory using telescope when i run `nvim <directory'
+if vim.fn.argc() == 1 and vim.fn.isdirectory(vim.fn.argv()[1]) == 1 then
+	vim.cmd.cd(vim.fn.argv()[1]) -- change working directory
+	vim.schedule(function()
+		require("telescope.builtin").find_files({
+			hidden = true,
+			file_ignore_patterns = { ".git/" },
+		})
+	end)
+end
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
