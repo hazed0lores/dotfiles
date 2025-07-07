@@ -1,7 +1,9 @@
 brave-bin
-docker-desktop
+catppuccin-gtk-theme-mocha
 librewolf-bin
-neofetch
+paru-bin
+paru-bin-debug
+qt6ct-kde
 qview
-rustdesk
+sonusmix
 vscodium-bin
