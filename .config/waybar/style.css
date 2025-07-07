@@ -81,7 +81,7 @@ tooltip {
 #temperature,
 #workspaces,
 #tray,
-#backlight, {
+#backlight {
   background: #1e1e2e;
   background: #313244;
   opacity: 0.8;
