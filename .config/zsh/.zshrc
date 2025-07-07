@@ -113,3 +113,4 @@ bindkey '^[[B' history-substring-search-down
 
 . "$HOME/.atuin/bin/env"
 eval "$(atuin init zsh)"
+eval "$(zoxide init zsh)"
