@@ -54,3 +54,5 @@ abbr addall 'git add .'
 abbr commit 'git commit -m'
 abbr push 'git push'
 abbr stat 'git status'
+
+zoxide init fish | source
