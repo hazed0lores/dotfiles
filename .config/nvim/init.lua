@@ -433,6 +433,16 @@ require("lazy").setup({
 				},
 			})
 
+			if vim.fn.argc() == 1 and vim.fn.isdirectory(vim.fn.argv()[1]) == 1 then
+				vim.cmd.cd(vim.fn.argv()[1]) -- change working directory
+				vim.schedule(function()
+					require("telescope.builtin").find_files({
+						hidden = true,
+						file_ignore_patterns = { ".git/" },
+					})
+				end)
+			end
+
 			-- Enable Telescope extensions if they are installed
 			pcall(require("telescope").load_extension, "fzf")
 			pcall(require("telescope").load_extension, "ui-select")
