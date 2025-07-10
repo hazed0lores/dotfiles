@@ -1,4 +1,6 @@
 7zip
+amdgpu_top
+apcupsd
 awesome-terminal-fonts
 base
 base-devel
@@ -12,12 +14,15 @@ btop
 catppuccin-gtk-theme-mocha
 chafa
 cliphist
+corectrl
+dash
 dialog
 dnsmasq
 efibootmgr
 fd
 ffmpegthumbnailer
 file-roller
+fish
 font-manager
 fzf
 git
@@ -27,6 +32,7 @@ gtk4
 gvfs
 gvfs-mtp
 helvum
+hugo
 hyprland
 hyprlock
 hyprpaper
@@ -47,6 +53,7 @@ libgepub
 libgsf
 libopenraw
 libraw
+libreoffice-fresh
 librewolf-bin
 libvirt
 linux
@@ -105,6 +112,7 @@ thunderbird
 timeshift
 tldr
 tmux
+tokei
 tree
 ttf-0xproto-nerd
 ttf-3270-nerd
@@ -166,6 +174,7 @@ ttf-victor-mono-nerd
 ttf-zed-mono-nerd
 tumbler
 unzip
+usbutils
 uwsm
 virt-manager
 vscodium-bin
