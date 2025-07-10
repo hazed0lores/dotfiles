@@ -78,7 +78,7 @@
 	"wireplumber": {
     		"format": "{icon} {volume}%",
     		"format-muted": "",
-    		"on-click": "helvum",
+    		"on-click": "sonusmix",
     		"format-icons": ["", "", ""]
 	},
 
@@ -95,7 +95,7 @@
 		"tooltip-format": "{essid} - {ifname} via {gwaddr}",
 		"format-linked": "{ifname} (No IP)",
 		"format-disconnected": "Disconnected ⚠",
-		"format-alt": "{ifname}:{essid} {ipaddr}/{cidr}"
+		"on-click": "kitty --class nmtui --title nmtui nmtui"
 	},
 
 	"custom/notification": {
@@ -121,7 +121,8 @@
 		"format-connected": " {device_alias} {device_battery_percentage}%",
 		"tooltip-format": "{device_alias}",
 		"tooltip-format-connected": " {device_enumerate}",
-		"tooltip-format-enumerate-connected": "{device_alias}"
+		"tooltip-format-enumerate-connected": "{device_alias}",
+		"on-click" : "blueman-manager"
 	},
 
 	"custom/launch_rofi": {
