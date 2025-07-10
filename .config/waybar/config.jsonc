@@ -9,6 +9,7 @@
 	"modules-left": ["hyprland/workspaces"],
 	"modules-center" : ["clock"],
 	"modules-right": [
+		"custom/music",
 		"wireplumber",
 		"bluetooth",
 		"network",
@@ -38,7 +39,16 @@
 			"default": "  "
 		}
 	},
-
+	
+	"custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --player spotify --format  '{{artist}} - {{title}}' | sed 's/ (.*)//'",
+        "on-click": "playerctl play-pause",
+        "max-length": 50
+    },
 	"tray": {
 		"icon-size": 18,
 		"spacing": 10
@@ -122,11 +132,5 @@
 		"tooltip-format-connected": " {device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}",
 		"on-click" : "blueman-manager"
-	},
-
-	"custom/launch_rofi": {
-		"format": " ",
-		"on-click": "~/.config/rofi/launchers/type-6/launcher.sh",
-		"tooltip": false
 	}
 }
