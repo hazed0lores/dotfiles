@@ -7,13 +7,12 @@
 	"gtk-layer-shell": true,
 	"height": 44,
 	"modules-left": ["hyprland/workspaces"],
-	"modules-center" : ["hyprland/window"],
+	"modules-center" : ["clock"],
 	"modules-right": [
 		"wireplumber",
 		"bluetooth",
 		"network",
-		"custom/notification",
-		"clock"
+		"custom/notification"
 	],
 	"hyprland/window": {
 		"format": "{}"
@@ -46,7 +45,7 @@
 	},
 
 	"clock": {
-		"format": " {:%H:%M}",
+		"format": " {:%H:%M | %d/%m}",
 		"tooltip-format": "<tt>{calendar}</tt>",
 		"calendar": {
 			"mode": "month",
