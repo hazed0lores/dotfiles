@@ -5,8 +5,9 @@
 	"exclusive": true,
 	"passthrough": false,
 	"gtk-layer-shell": true,
-	"height": 44,
+	"height": 48,
 	"modules-left": ["hyprland/workspaces"],
+
 	"modules-center" : ["clock"],
 	"modules-right": [
 		"custom/music",
@@ -40,20 +41,6 @@
 		}
 	},
 	
-	"custom/music": {
-        "format": "  {}",
-        "escape": true,
-        "interval": 5,
-        "tooltip": false,
-        "exec": "playerctl metadata --player spotify --format  '{{artist}} - {{title}}' | sed 's/ (.*)//'",
-        "on-click": "playerctl play-pause",
-        "max-length": 50
-    },
-	"tray": {
-		"icon-size": 18,
-		"spacing": 10
-	},
-
 	"clock": {
 		"format": " {:%H:%M | %d/%m}",
 		"tooltip-format": "<tt>{calendar}</tt>",
@@ -70,7 +57,15 @@
 		}
 	},
 
-
+	"custom/music": {
+        "format": "  {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "exec": "playerctl metadata --player spotify --format  '{{artist}} - {{title}}' | sed 's/ (.*)//'",
+        "on-click": "playerctl --player spotify play-pause",
+        "max-length": 50
+    },
 	"battery": {
 		"states": {
 			"good": 95,
@@ -98,9 +93,9 @@
 	},
 
 	"network": {
-		// "interface": "wlp2*", // (Optional) To force the use of this interface
+		"interface": "enp6s0", // (Optional) To force the use of this interface
 		"format-wifi": "{essid}  {signalStrength}%",
-		"format-ethernet": "{ifname}",
+		"format-ethernet": "󰈁 Wired",
 		"tooltip-format": "{essid} - {ifname} via {gwaddr}",
 		"format-linked": "{ifname} (No IP)",
 		"format-disconnected": "Disconnected ⚠",

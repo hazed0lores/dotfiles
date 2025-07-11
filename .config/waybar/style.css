@@ -18,7 +18,6 @@ window#waybar.empty #window {
   border: 0px;
   background-color: transparent;
 }
-
 tooltip {
   background: #1e1e2e;
   border-radius: 10px;
@@ -50,9 +49,10 @@ tooltip {
 }
 
 #workspaces button:hover {
-  background: #313244;
-  color: #cdd6f4;
-  border-radius: 20px;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    padding: 0 3px;
+    border-radius: 20px;
 }
 
 #custom-notification {
@@ -74,6 +74,7 @@ tooltip {
 }
 #window,
 #clock,
+#custom-music,
 #battery,
 #wireplumber,
 #network,
@@ -81,9 +82,8 @@ tooltip {
 #temperature,
 #workspaces,
 #tray,
-#backlight {
-  background: #1e1e2e;
-  background: #313244;
+#backlight{
+background: #313244;
   opacity: 0.8;
   padding: 0px 10px;
   margin: 3px 0px;
@@ -91,6 +91,10 @@ tooltip {
   margin-bottom: 5px;
   border: 1px solid #181825;
   border-radius: 15px;
+}
+
+#custom-music {
+	color: #a6e3a1
 }
 
 #temperature {
@@ -158,6 +162,7 @@ tooltip {
   padding-left: 17px;
   border-radius: 15px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 #battery {
