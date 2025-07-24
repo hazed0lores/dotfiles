@@ -11,11 +11,14 @@ blueman
 bluez
 brave-bin
 btop
+btrfs-progs
 catppuccin-gtk-theme-mocha
 chafa
+chntpw
 cliphist
 corectrl
 dash
+ddcutil
 dialog
 dnsmasq
 efibootmgr
@@ -27,6 +30,7 @@ font-manager
 fzf
 git
 go
+gparted
 grub
 gtk4
 gvfs
@@ -61,6 +65,7 @@ linux-firmware
 lsd
 lxappearance-gtk3
 man-db
+mpv
 mupdf
 ncspot
 neovim
@@ -69,8 +74,10 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+ntfs-3g
 obsidian
 openssh
+os-prober
 otf-aurulent-nerd
 otf-codenewroman-nerd
 otf-comicshanns-nerd
@@ -85,10 +92,12 @@ otf-opendyslexic-nerd
 otf-overpass-nerd
 paru-bin
 paru-bin-debug
+pavucontrol
 pipewire-alsa
 pipewire-pulse
 poppler
 poppler-glib
+python-pip
 qemu-full
 qt5-wayland
 qt5ct
